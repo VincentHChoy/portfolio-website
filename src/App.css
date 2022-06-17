@@ -1,38 +1,119 @@
 .App {
-  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  color: #eee9e4;
+  background: #1a1d1e;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.btn {
+  display: block;
+  cursor: pointer;
+  padding: 0.8em 1.4em;
+  font-weight: 800;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease-in-out;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn--outline {
+  color: #64c5ff;
+  text-decoration: none;
+  border: 2px solid #64c5ff;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn--outline:hover,
+.btn--outline:focus {
+  color: #1a1d1e;
+  ;
+}
+
+.btn--outline:before {
+  content: '';
+  position: absolute;
+  background-color: #64c5ff;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: right 0.2s ease-in-out;
+}
+
+.btn--outline:hover:before,
+.btn--outline:focus:before {
+  right: 0;
+}
+
+.btn--plain {
+  text-transform: initial;
+  background-color: var(--clr-bg-alt);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 3px 0px;
+  border: 0;
+}
+
+.btn--plain:hover {
+  transform: translateY(-4px);
+}
+
+.btn--icon {
+  padding: 0;
+}
+
+.btn--icon:hover,
+.btn--icon:focus {
+  color: #64c5ff;
+}
+
+.btn--icon:active {
+  transform: translateY(-5px);
+}
+
+.name {
+  color: #64c5ff;
+}
+
+.link-icon {
+  color: #64c5ff;
+}
+
+
+
+.education {
   display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+
+.cred {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media screen and (max-width: 600px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
   }
-  to {
-    transform: rotate(360deg);
+
+  .desc {
+    width: 100%;
+  }
+
+  .about-contact-center {
+    width: 100%;
+  }
+
+  .cred {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
   }
 }

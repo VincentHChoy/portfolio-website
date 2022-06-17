@@ -1,0 +1,23 @@
+.about {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.5em;
+  flex-direction: column;
+  text-align: center;
+  margin: 1em;
+}
+
+.desc {
+  text-align: center;
+  font-size: 1rem;
+  width: 35%;
+}
+
+.about-contact-center {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  padding: 10px;
+}

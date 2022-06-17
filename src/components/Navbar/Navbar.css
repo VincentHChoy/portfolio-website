@@ -1,0 +1,17 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20%;
+  margin-right: 20%;
+
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-menu h3 {
+  padding: 1em;
+}
