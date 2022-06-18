@@ -1,4 +1,8 @@
 .App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   font-family: 'Poppins', sans-serif;
   line-height: 1.5;
   color: #eee9e4;
@@ -114,6 +118,10 @@
   .cred {
     display: flex;
     flex-direction: column;
+    width: 100%;
+  }
+
+  .skill-container{
     width: 100%;
   }
 }
