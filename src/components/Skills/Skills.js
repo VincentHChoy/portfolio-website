@@ -14,8 +14,8 @@ function Skills() {
 
 
   return (
-    
-    <section className="skills">
+    <section>
+      <h2 className="section-title">Skills</h2>
       <ul className="skills">
         {categoryList.map((eachSkill,i) => (
           <SkillsContainer

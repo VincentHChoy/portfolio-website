@@ -83,7 +83,10 @@
   color: #64c5ff;
 }
 
-
+.section-title{
+  font-size: 2rem;
+  text-align: center;
+}
 
 .education {
   display: flex;
@@ -92,13 +95,6 @@
   flex-direction: column;
   text-align: center;
   margin: 1em;
-}
-
-.cred {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 
 @media screen and (max-width: 600px) {

@@ -1,6 +1,5 @@
 import "./SkillsContainer.css";
 import SkillIcon from "../SkillIcon/SkillIcon";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDatabase } from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
@@ -13,70 +12,77 @@ import {
   faNode,
   faNodeJs,
 } from "@fortawesome/free-brands-svg-icons";
+// import skills from '../json/skills.json'
 
-function SkillsContainer({skill}) {
-    const skills = [
-      {
-        name: "HTML5",
-        icon: faHtml5,
-        color: "orange",
-        category: "Markup/Styling",
-      },
-      {
-        name: "CSS5",
-        icon: faCss3,
-        color: "#6cc2fa",
-        category: "Markup/Styling",
-      },
-      {
-        name: "Javascript",
-        icon: faJs,
-        color: "yellow",
-        category: "Programming Languages",
-      },
-      {
-        name: "React",
-        icon: faReact,
-        color: "rgb(97, 218, 251)",
-        category: "Javascript Frameworks",
-      },
-      {
-        name: "NPM",
-        icon: faNpm,
-        color: "red",
-        category: "Package Manager",
-      },
-      {
-        name: "Github",
-        icon: faGithub,
-        color: "white",
-        category: "Version Control",
-      },
-      {
-        name: "Git",
-        icon: faGit,
-        color: "orange",
-        category: "Version Control",
-      },
-      {
-        name: "NodeJS",
-        icon: faNode,
-        color: "rgb(39, 174, 96)",
-        category: "Backend",
-      },
-      {
-        name: "ExpressJS",
-        icon: faNodeJs,
-        color: "rgb(39, 174, 96)",
-        category: "Backend",
-      },
-      {
-        name: "MySQL",
-        icon: faDatabase,
-        color: "rgb(62, 110, 147)",
-        category: "Database Management",
-      },
-    ];
+function SkillsContainer({ skill }) {
+  const skills = [
+    {
+      name: "HTML5",
+      icon: faHtml5,
+      color: "orange",
+      category: "Markup/Styling",
+    },
+    {
+      name: "CSS5",
+      icon: faCss3,
+      color: "#6cc2fa",
+      category: "Markup/Styling",
+    },
+    {
+      name: "Javascript",
+      icon: faJs,
+      color: "yellow",
+      category: "Programming Languages",
+    },
+    {
+      name: "React",
+      icon: faReact,
+      color: "rgb(97, 218, 251)",
+      category: "Javascript Frameworks",
+    },
+    {
+      name: "NPM",
+      icon: faNpm,
+      color: "red",
+      category: "Package Manager",
+    },
+    {
+      name: "Github",
+      icon: faGithub,
+      color: "white",
+      category: "Version Control",
+    },
+    {
+      name: "Git",
+      icon: faGit,
+      color: "orange",
+      category: "Version Control",
+    },
+    {
+      name: "NodeJS",
+      icon: faNode,
+      color: "rgb(39, 174, 96)",
+      category: "Backend",
+    },
+    {
+      name: "ExpressJS",
+      icon: faNodeJs,
+      color: "rgb(39, 174, 96)",
+      category: "Backend",
+    },
+    {
+      name: "MySQL",
+      icon: faDatabase,
+      color: "rgb(62, 110, 147)",
+      category: "Database Management",
+    },
+    {
+      name: "jQuery",
+      icon: faNodeJs,
+      color: "rgb(62, 110, 147)",
+      category: "Javascript Frameworks",
+    },
+  ];
 
   const findSkill = (data, key) => {
     const output = [];
@@ -88,14 +94,12 @@ function SkillsContainer({skill}) {
     return output;
   };
 
-  const foundSkill = findSkill(skills,skill.category)
-  console.log(foundSkill)
+  const foundSkill = findSkill(skills, skill.category);
 
   return (
     <div className="skill-container">
       <h3>{skill.category}</h3>
-      <SkillIcon
-      skill ={foundSkill}/>
+      <SkillIcon skill={foundSkill} />
     </div>
   );
 }
