@@ -13,6 +13,14 @@
   flex-direction: row;
 }
 
-.nav-menu h3 {
+.nav-menu a h3 {
   padding: 1em;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  color: #eee9e4;
+}
+
+.nav-menu a h3:hover {
+  color: #64c5ff;
 }

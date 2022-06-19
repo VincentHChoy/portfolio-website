@@ -26,6 +26,8 @@ const About = () =>{
           href={"https://github.com/VincentHChoy"}
           aria-label="github"
           className="link-icon"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <GitHubIcon />
         </a>
@@ -33,6 +35,8 @@ const About = () =>{
           href={"https://www.linkedin.com/in/vincent-choy/"}
           aria-label="linkedin"
           className="link-icon"
+          target="_blank"
+          rel="noopener noreferrer"
         >
           <LinkedInIcon />
         </a>

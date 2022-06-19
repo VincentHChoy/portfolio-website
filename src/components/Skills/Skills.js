@@ -15,13 +15,12 @@ function Skills() {
 
   return (
     <section>
-      <h2 className="section-title">Skills</h2>
+      <a id="skills">
+        <h2 className="section-title">Skills</h2>
+      </a>
       <ul className="skills">
-        {categoryList.map((eachSkill,i) => (
-          <SkillsContainer
-          key={i}
-          skill={eachSkill}
-          />
+        {categoryList.map((eachSkill, i) => (
+          <SkillsContainer key={i} skill={eachSkill} />
         ))}
       </ul>
     </section>

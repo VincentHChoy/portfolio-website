@@ -83,7 +83,7 @@
   color: #64c5ff;
 }
 
-.section-title{
+.section-title {
   font-size: 2rem;
   text-align: center;
 }
@@ -117,7 +117,17 @@
     width: 100%;
   }
 
-  .skill-container{
+  .skill-container {
     width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+  .main-container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
   }
 }
