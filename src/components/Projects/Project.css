@@ -29,6 +29,7 @@
   text-align: center;
   margin: 1em;
   padding: 1em;
+  width: 80%;
   box-shadow: #367397 0px 7px 29px 0px;
   transition: transform 0.2s linear;
 }
@@ -40,7 +41,7 @@
 
 .project-img {
   max-width: none !important;
-  max-height: 200px !important;
+  max-height: 150px !important;
   box-shadow: #6e6e6e 0px 7px 29px 0px;
 }
 
