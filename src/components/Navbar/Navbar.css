@@ -21,6 +21,25 @@
   color: #eee9e4;
 }
 
+.nav-menu a:link {
+  text-decoration: none;
+}
+
+
+.nav-menu a:visited {
+  text-decoration: none;
+}
+
+
+.nav-menu a:hover {
+  text-decoration: none;
+}
+
+
+.nav-menu a:active {
+  text-decoration: none;
+}
+
 .nav-menu a h3:hover {
   color: #64c5ff;
 }
