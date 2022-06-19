@@ -1,6 +1,6 @@
 import './About.css'
-import GitHubIcon from "@material-ui/icons/GitHub";
-import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
 const About = () =>{
@@ -29,7 +29,7 @@ const About = () =>{
           target="_blank"
           rel="noopener noreferrer"
         >
-          <GitHubIcon />
+          <FontAwesomeIcon icon={faGithub} />
         </a>
         <a
           href={"https://www.linkedin.com/in/vincent-choy/"}
@@ -38,7 +38,7 @@ const About = () =>{
           target="_blank"
           rel="noopener noreferrer"
         >
-          <LinkedInIcon />
+          <FontAwesomeIcon icon={faLinkedin} />
         </a>
       </div>
     </main>
