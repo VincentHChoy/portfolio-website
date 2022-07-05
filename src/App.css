@@ -9,6 +9,22 @@
   background: #1a1d1e;
 }
 
+.App a h3 {
+  color: #eee9e4;
+}
+
+.light {
+  color: #1a1d1e;
+  background: #eee9e4;
+  box-shadow: grey 0px 7px 29px 0px;
+
+}
+
+.light a h3 {
+  color: #1a1d1e;
+  background: #eee9e4;
+}
+
 .btn {
   display: block;
   cursor: pointer;
@@ -116,7 +132,7 @@
     flex-direction: column;
     width: 100%;
   }
-  
+
   .skill-container {
     width: 100%;
   }

@@ -5,16 +5,26 @@ import Skills from "./components/Skills/Skills";
 import Project from "./components/Projects/Project";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop"
 import "./App.css";
+import { useState } from "react";
 
 
 function App() {
+  const [theme,setTheme] = useState('')
+  const toggleStyle = () =>{
+    setTheme(theme === '' ? 'light' : '')
+  }
+
   return (
-    <div className="App">
-      <Navbar/>
+    <div className={`App ${theme}`}>
+      <Navbar
+      toggleStyle ={toggleStyle}
+      theme={theme}/>
       <About />
-      <Education />
+      <Education 
+      theme={theme}/>
       <Skills/>
-      <Project/>
+      <Project
+      theme={theme}/>
       <ScrollToTop/>
     </div>
   );

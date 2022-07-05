@@ -29,7 +29,8 @@ const projects = [
   },
 ];
 
-function Project() {
+function Project(props) {
+
   const colorMatcher = (data, stackItem) => {
     for (const skills of data) {
       if (stackItem === skills.name) {
@@ -46,7 +47,7 @@ function Project() {
       </a>
       <div className="main-container">
         {projects.map((eachProject) => (
-          <div className="project-container">
+          <div className={`project-container ${props.theme}`}>
             <h2>{eachProject.name}</h2>
             <a
               href={eachProject.github}

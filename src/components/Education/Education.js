@@ -1,11 +1,11 @@
 import "./Education.css";
 
-const About = () => {
+const About = (props) => {
   return (
     <section className="education">
       <h2 className="section-title">Education</h2>
       <div className="cred">
-        <div className="container">
+        <div className={`container ${props.theme}`}>
           <h3>Lighthouse Labs</h3>
           <a href="https://www.lighthouselabs.ca/">
             <img
@@ -17,7 +17,7 @@ const About = () => {
           <p>Web Development Flex Program</p>
           <p>Class of 2022</p>
         </div>
-        <div className="container">
+        <div className={`container ${props.theme}`}>
           <h3>University of Alberta</h3>
           <a
             href="https://www.ualberta.ca/engineering/civil-environmental-engineering/index.html"
