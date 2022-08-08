@@ -23,7 +23,7 @@ function Navbar(props) {
         <a onClick={contactHandler}>
           <h3>contact</h3>
         </a>
-        <Contact trigger={trigger} />
+        {/* <Contact trigger={trigger} /> */}
         <button
           className={`theme-toggle ${props.theme}`}
           onClick={props.toggleStyle}
