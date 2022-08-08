@@ -17,7 +17,7 @@ const About = () => {
         My passion is <strong className="name">front end development.</strong>
       </p>
       <div className="about-contact-center">
-        <a href={"https://resume.creddle.io/resume/cdt4ump48qv"}>
+        <a href={"https://resume.creddle.io/resume/cdt4ump48qv"} target="_blank">
           <span type="button" className="btn btn--outline">
             Resume
           </span>
