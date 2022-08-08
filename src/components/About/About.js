@@ -3,7 +3,7 @@ import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 
-const About = () =>{
+const About = () => {
   return (
     <main className="about">
       <h1>
@@ -17,7 +17,7 @@ const About = () =>{
         My passion is <strong className="name">front end development.</strong>
       </p>
       <div className="about-contact-center">
-        <a href={""}>
+        <a href={"https://resume.creddle.io/resume/cdt4ump48qv"}>
           <span type="button" className="btn btn--outline">
             Resume
           </span>

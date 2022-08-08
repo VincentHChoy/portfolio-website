@@ -9,7 +9,7 @@ function SkillIcon({skill}) {
       {skill.map((skill,i) => (
         <div className="icon">
           <FontAwesomeIcon
-            key={i}
+            key={skill.name}
             size="4x"
             style={{ color: skill.color }}
             icon={skill.icon}

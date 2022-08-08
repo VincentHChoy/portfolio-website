@@ -24,7 +24,7 @@ const projects = [
     preview:
       "https://user-images.githubusercontent.com/63982069/165608971-e0aece87-774f-4295-9204-10937490d466.png",
     github: "https://github.com/VincentHChoy/tiny-app",
-    desc: "a full stack web application built with Node and Express that allows users to shorten long URLs",
+    desc: "a full stack web application built with Node and Express that allows users to shorten long URLs.",
     stack: ["HTML5", "CSS5", "Javascript", "ExpressJS", "Bootstrap","NodeJS"],
   },
 ];

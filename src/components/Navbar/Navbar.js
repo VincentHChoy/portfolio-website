@@ -1,8 +1,15 @@
 import './Navbar.css'
+import Contact from './Contact/Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSun, faMoon} from "@fortawesome/free-solid-svg-icons";
+import { useState } from 'react';
 
 function Navbar(props) {
+  const [trigger,setTrigger] = useState(false)
+  const contactHandler = () =>{
+    setTrigger(trigger === true ? false : true)
+  }
+
   return (
     <header className="navbar">
       <h1 className="name"> VC.</h1>
@@ -13,12 +20,15 @@ function Navbar(props) {
         <a href="#skills">
           <h3>skills</h3>
         </a>
-        <a href="#contact">
+        <a onClick={contactHandler}>
           <h3>contact</h3>
         </a>
-        <button className={`theme-toggle ${props.theme}`}
-        onClick={props.toggleStyle}>
-          <FontAwesomeIcon icon={props.theme === '' ? faSun : faMoon}/>
+        <Contact trigger={trigger} />
+        <button
+          className={`theme-toggle ${props.theme}`}
+          onClick={props.toggleStyle}
+        >
+          <FontAwesomeIcon icon={props.theme === "" ? faSun : faMoon} />
         </button>
       </div>
     </header>

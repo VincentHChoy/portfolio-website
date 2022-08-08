@@ -107,7 +107,9 @@ export default function SkillsContainer({ skill }) {
   return (
     <div className="skill-container">
       <h3>{skill.category}</h3>
-      <SkillIcon skill={foundSkill} />
+      <SkillIcon 
+      key={skill.name}
+      skill={foundSkill} />
     </div>
   );
 }
