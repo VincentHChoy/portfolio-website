@@ -14,7 +14,15 @@ const About = (props) => {
               rel="noopener noreferrer"
             ></img>
           </a>
-          <p>Web Development Flex Program</p>
+          <p>
+            Diploma:<br></br>
+            <span className="name">
+              {" "}
+              Full-Stack <br></br>
+              Web Development
+            </span>{" "}
+            Program
+          </p>
           <p>Class of 2022</p>
         </div>
         <div className={`container ${props.theme}`}>
@@ -27,7 +35,7 @@ const About = (props) => {
             <img src="https://www.logolynx.com/images/logolynx/s_56/56cc62c5e545182fc993c149fddb6ac8.jpeg"></img>
           </a>
           <p>
-            Bachelor of Science <br></br>
+            Bachelor of Science: <br></br>
             <span className="name">Civil Engineering</span> <br></br>{" "}
             Enviromental Option <br></br> Co-op Program
           </p>

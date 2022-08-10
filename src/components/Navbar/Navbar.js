@@ -1,26 +1,41 @@
 import './Navbar.css'
-import Contact from './Contact/Contact';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faSun, faMoon} from "@fortawesome/free-solid-svg-icons";
-import { useState } from 'react';
+
+
 
 function Navbar(props) {
-  const [trigger,setTrigger] = useState(false)
-  const contactHandler = () =>{
-    setTrigger(trigger === true ? false : true)
+
+  const scrollToSection = (section,e) =>{
+    let sectionId = document.getElementById(section);
+    e.preventDefault();
+    sectionId && sectionId.scrollIntoView({ behavior: "smooth", block: "start" });
+
   }
 
   return (
     <header className="navbar">
       <h1 className="name"> VC.</h1>
       <div className="nav-menu">
-        <a href="#projects">
+        <a
+          onClick={e => {
+            scrollToSection("projects",e)
+          }}
+        >
           <h3>projects</h3>
         </a>
-        <a href="#skills">
+        <a
+          onClick={e => {
+            scrollToSection("skills", e)
+          }}
+        >
           <h3>skills</h3>
         </a>
-        <a onClick={contactHandler}>
+        <a
+          onClick={e => {
+            scrollToSection("contact", e)
+          }}
+        >
           <h3>contact</h3>
         </a>
         {/* <Contact trigger={trigger} /> */}

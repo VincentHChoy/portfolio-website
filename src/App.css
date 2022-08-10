@@ -25,13 +25,13 @@
   background: #eee9e4;
 }
 
+
 .btn {
   display: block;
   cursor: pointer;
   padding: 0.8em 1.4em;
   font-weight: 800;
   font-size: 1rem;
-  text-decoration: none;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -44,11 +44,21 @@
   z-index: 1;
 }
 
+.about-contact-center a {
+  text-decoration: none;
+  
+}
+
 .btn--outline:hover,
 .btn--outline:focus {
   color: #1a1d1e;
-  ;
 }
+
+.btn--outline light:hover,
+.btn--outline light:focus {
+  color: #eee9e4;
+}
+
 
 .btn--outline:before {
   content: '';

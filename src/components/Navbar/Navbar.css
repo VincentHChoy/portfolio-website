@@ -40,6 +40,7 @@
 
 .nav-menu a h3:hover {
   color: #64c5ff;
+  cursor: pointer;
 }
 
 .theme-toggle {

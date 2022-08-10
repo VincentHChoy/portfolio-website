@@ -11,14 +11,14 @@ const About = () => {
       </h1>
       <h2>A Front End Developer.</h2>
       <p className="desc">
-        I graduated from the Univeristy of Alberta with a degree in Civil
+        I graduated from the Univeristy of Alberta with a bachelors degree in Civil
         Engineering and alumni of the accredited Lighthouse Labs bootcamp!
         <br></br>
         My passion is <strong className="name">front end development.</strong>
       </p>
-      <div className="about-contact-center">
+      <div className="about-contact-center" >
         <a href={"https://resume.creddle.io/resume/cdt4ump48qv"} target="_blank">
-          <span type="button" className="btn btn--outline">
+          <span type="button" className={"btn btn--outline"}>
             Resume
           </span>
         </a>

@@ -10,4 +10,8 @@ export const Button = styled.div`
   z-index: 1;
   cursor: pointer;
   color: #64c5ff;
+  opacity: 0.5;
+  &:hover {
+    opacity: 1; // <Thing> when hovered
+  }
 `;

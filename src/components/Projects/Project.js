@@ -54,7 +54,7 @@ function Project(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="project-img" src={eachProject.preview}></img>
+              <img className="project-img" src={eachProject.preview}/>
             </a>
             <p>{eachProject.desc}</p>
             <div className="icon-container">
