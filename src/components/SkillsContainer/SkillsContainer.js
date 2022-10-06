@@ -1,6 +1,6 @@
 import "./SkillsContainer.css";
 import SkillIcon from "../SkillIcon/SkillIcon";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faDatabase, faGem, faFire, faWind} from "@fortawesome/free-solid-svg-icons";
 import {
   faHtml5,
   faCss3,
@@ -12,6 +12,7 @@ import {
   faNode,
   faNodeJs,
   faBootstrap,
+  faBattleNet,
 } from "@fortawesome/free-brands-svg-icons";
 // import skills from '../json/skills.json'
 
@@ -29,15 +30,33 @@ export const skills = [
     category: "Markup/Styling",
   },
   {
+    name: "Tailwind",
+    icon: faWind,
+    color: "#6cc2fa",
+    category: "Markup/Styling",
+  },
+  {
     name: "Javascript",
     icon: faJs,
     color: "yellow",
     category: "Programming Languages",
   },
   {
+    name: "Ruby",
+    icon: faGem,
+    color: "red",
+    category: "Programming Languages",
+  },
+  {
     name: "React",
     icon: faReact,
     color: "rgb(97, 218, 251)",
+    category: "Javascript Frameworks",
+  },
+  {
+    name: "Redux",
+    icon: faBattleNet,
+    color: "#9064d5",
     category: "Javascript Frameworks",
   },
   {
@@ -57,6 +76,12 @@ export const skills = [
     icon: faGit,
     color: "orange",
     category: "Version Control",
+  },
+  {
+    name: "Firebase",
+    icon: faFire,
+    color: "orange",
+    category: "Backend",
   },
   {
     name: "NodeJS",

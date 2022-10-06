@@ -5,6 +5,13 @@ import { skills } from "../SkillsContainer/SkillsContainer";
 
 const projects = [
   {
+    name: "Ketchup",
+    preview: "https://i.imgur.com/Z0P5Elz.png",
+    github: "https://github.com/VincentHChoy/ketchup",
+    desc: "Real-time chat/work collabration app with Google API integration. Allows chatting, google sheets and google docs without ever leaving the app.",
+    stack: ["HTML5", "CSS5", "Javascript", "React","Redux","Tailwind"],
+  },
+  {
     name: "Portfolio Website",
     preview: "https://i.imgur.com/vj4O8OU.png",
     github: "https://github.com/VincentHChoy/react-website",
