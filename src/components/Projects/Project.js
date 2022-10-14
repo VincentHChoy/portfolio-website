@@ -7,8 +7,9 @@ const projects = [
   {
     name: "Ketchup",
     preview: "https://i.imgur.com/Z0P5Elz.png",
-    github: "https://github.com/VincentHChoy/ketchup",
-    desc: "Real-time chat/work collabration app with Google API integration. Allows chatting, google sheets and google docs without ever leaving the app.",
+    link: "https://ketchup-demo.netlify.app/",
+    github: "https://github.com/VincentHChoy/ketchup-demo",
+    desc: "Full stack real-time chat/work collabration app with Google API integration. Allows chatting, google sheets and google docs without ever leaving the app.",
     stack: ["HTML5", "CSS5", "Javascript", "React","Redux","Tailwind"],
   },
   {
@@ -57,7 +58,7 @@ function Project(props) {
           <div className={`project-container ${props.theme}`}>
             <h2>{eachProject.name}</h2>
             <a
-              href={eachProject.github}
+              href={eachProject.link || eachProject.github}
               target="_blank"
               rel="noopener noreferrer"
             >
