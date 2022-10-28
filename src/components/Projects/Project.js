@@ -5,12 +5,29 @@ import { skills } from "../SkillsContainer/SkillsContainer";
 
 const projects = [
   {
+    name: "Climbr",
+    preview:
+      "https://user-images.githubusercontent.com/63982069/198501902-06712884-d394-46d7-838c-552e9d037dde.png",
+    link: "https://climbr.netlify.app/",
+    github: "https://github.com/VincentHChoy/climbr",
+    desc: "Client-side app for logging Marc Bourdon's Top 100 Squamish Boulders with a beautiful interface and intuitive user experience.",
+    stack: ["HTML5", "CSS5", "Javascript", "React", "Tailwind"],
+  },
+  {
     name: "Ketchup",
     preview: "https://i.imgur.com/Z0P5Elz.png",
     link: "https://ketchup-demo.netlify.app/",
-    github: "https://github.com/VincentHChoy/ketchup-demo",
+    github: "https://github.com/VincentHChoy/climbr",
     desc: "Full stack real-time chat/work collabration app with Google API integration. Allows chatting, google sheets and google docs without ever leaving the app.",
-    stack: ["HTML5", "CSS5", "Javascript", "React","Redux","Tailwind"],
+    stack: ["HTML5", "CSS5", "Javascript", "React", "Redux", "Tailwind"],
+  },
+  {
+    name: "Interview Scheduler",
+    preview:
+      "https://user-images.githubusercontent.com/63982069/183536704-3373db5c-d5a3-4064-a05f-528df490dabb.png",
+    github: "https://github.com/VincentHChoy/interview-scheduler",
+    desc: "Singe Page App for interviewers to schedule interviews with potential candidates",
+    stack: ["HTML5", "CSS5", "Javascript", "React"],
   },
   {
     name: "Portfolio Website",
@@ -19,26 +36,9 @@ const projects = [
     desc: "Website provides professional information about myself and presents a showcase of my work.",
     stack: ["HTML5", "CSS5", "Javascript", "React"],
   },
-  {
-    name: "Tweeter",
-    preview:
-      "https://user-images.githubusercontent.com/63982069/168381217-06b3ec8b-adaa-4fe9-aad5-881a5fbcc8e2.png",
-    github: "https://github.com/VincentHChoy/tweeter",
-    desc: "Twitter clone for practicing HTML, CSS, JS, jQuery and AJAX front-end skills, and Node, Express back-end skills.",
-    stack: ["HTML5", "CSS5", "Javascript", "jQuery", "NodeJS"],
-  },
-  {
-    name: "TinyApp",
-    preview:
-      "https://user-images.githubusercontent.com/63982069/165608971-e0aece87-774f-4295-9204-10937490d466.png",
-    github: "https://github.com/VincentHChoy/tiny-app",
-    desc: "a full stack web application built with Node and Express that allows users to shorten long URLs.",
-    stack: ["HTML5", "CSS5", "Javascript", "ExpressJS", "Bootstrap","NodeJS"],
-  },
 ];
 
 function Project(props) {
-
   const colorMatcher = (data, stackItem) => {
     for (const skills of data) {
       if (stackItem === skills.name) {
@@ -62,32 +62,34 @@ function Project(props) {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img className="project-img" src={eachProject.preview}/>
+              <img className="project-img" src={eachProject.preview} />
             </a>
             <p>{eachProject.desc}</p>
-            <div className="icon-container">
-              {eachProject.stack.map((eachStack) => (
-                <div className="icon">
-                  <FontAwesomeIcon
-                    size="2x"
-                    icon={colorMatcher(skills, eachStack).icon}
-                    style={{ color: colorMatcher(skills, eachStack).color }}
-                  ></FontAwesomeIcon>
-                  <p className="stack-names">
-                    {colorMatcher(skills, eachStack).name}
-                  </p>
-                </div>
-              ))}
-            </div>
-            <a
-              href={eachProject.github}
-              aria-label="github"
-              className="link-icon"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon size="2x" icon={faGithub}></FontAwesomeIcon>
-            </a>
+            <section className="last-of">
+              <div className="icon-container">
+                {eachProject.stack.map((eachStack) => (
+                  <div className="icon">
+                    <FontAwesomeIcon
+                      size="2x"
+                      icon={colorMatcher(skills, eachStack).icon}
+                      style={{ color: colorMatcher(skills, eachStack).color }}
+                    ></FontAwesomeIcon>
+                    <p className="stack-names">
+                      {colorMatcher(skills, eachStack).name}
+                    </p>
+                  </div>
+                ))}
+              </div>
+              <a
+                href={eachProject.github}
+                aria-label="github"
+                className="link-icon"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon size="2x" icon={faGithub}></FontAwesomeIcon>
+              </a>
+            </section>
           </div>
         ))}
       </div>
