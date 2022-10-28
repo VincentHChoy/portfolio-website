@@ -3,6 +3,7 @@ import "./Education.css";
 const About = (props) => {
   return (
     <section className="education">
+      <a id="education">
       <h2 className="section-title">Education</h2>
       <div className="cred">
         <div className={`container ${props.theme}`}>
@@ -42,6 +43,7 @@ const About = (props) => {
           <p>Class of 2020</p>
         </div>
       </div>
+      </a>
     </section>
   );
 };

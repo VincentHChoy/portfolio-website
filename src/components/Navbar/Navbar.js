@@ -1,39 +1,43 @@
-import './Navbar.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faSun, faMoon} from "@fortawesome/free-solid-svg-icons";
-
-
+import "./Navbar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSun, faMoon } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar(props) {
-
-  const scrollToSection = (section,e) =>{
+  const scrollToSection = (section, e) => {
     let sectionId = document.getElementById(section);
     e.preventDefault();
-    sectionId && sectionId.scrollIntoView({ behavior: "smooth", block: "start" });
-
-  }
+    sectionId &&
+      sectionId.scrollIntoView({ behavior: "smooth", block: "start" });
+  };
 
   return (
     <header className="navbar">
       <h1 className="name"> VC.</h1>
       <div className="nav-menu">
         <a
-          onClick={e => {
-            scrollToSection("projects",e)
-          }}
-        >
-          <h3>projects</h3>
-        </a>
-        <a
-          onClick={e => {
-            scrollToSection("skills", e)
+          onClick={(e) => {
+            scrollToSection("skills", e);
           }}
         >
           <h3>skills</h3>
         </a>
         <a
-          onClick={e => {
-            scrollToSection("contact", e)
+          onClick={(e) => {
+            scrollToSection("projects", e);
+          }}
+        >
+          <h3>projects</h3>
+        </a>
+        <a
+          onClick={(e) => {
+            scrollToSection("education", e);
+          }}
+        >
+          <h3>education</h3>
+        </a>
+        <a
+          onClick={(e) => {
+            scrollToSection("contact", e);
           }}
         >
           <h3>contact</h3>
@@ -50,4 +54,4 @@ function Navbar(props) {
   );
 }
 
-export default Navbar
+export default Navbar;
